@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-  // const BASE_URL = "https://telivy-backend.azurewebsites.net";
-  const BASE_URL = "http://localhost:3000";
+  const BASE_URL = "https://telivy-backend.azurewebsites.net";
+  // const BASE_URL = "http://localhost:3000";
   /* ================= CONFIGURATION ================= */
   const CONFIG = {
     API_URL: BASE_URL+"/api/chat",
