@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
  
 const BASE_URL = "https://telivy-backend.azurewebsites.net";
- 
- 
+  
   /* ================= CONFIGURATION ================= */
   const CONFIG = {
     API_URL:          BASE_URL + "/api/chat",
@@ -701,11 +700,14 @@ input.addEventListener('keydown', (e) => {
     const message = chat.chatInput.value.trim();
     if (!message) return;
  
-    chat.chatBod.classList.add("chat-started");
-    chat.pills.classList.add("hide");
-    chat.appendChatMessage(message, "user");
-    chat.chatInput.value = "";
-    chat.showTypingIndicator();
+chat.chatBod.classList.add("chat-started", "background-gray");
+chat.pills.classList.add("hide");
+ 
+chat.appendChatMessage(message, "user");
+ 
+chat.chatInput.value = "";
+ 
+chat.showTypingIndicator();
  
     try {
       const res = await fetch(CONFIG.API_URL, {
