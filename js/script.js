@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
- 
+//test 
 const BASE_URL = "https://telivy-backend.azurewebsites.net";
   
   /* ================= CONFIGURATION ================= */
@@ -198,12 +198,7 @@ input.addEventListener('keydown', (e) => {
 });
  
  
- 
- 
- 
- 
- 
- 
+
   /* ── Bottom send button ── */
   document.getElementById("handleSendMessage")
     .addEventListener("click", () => handleSendMessages());
